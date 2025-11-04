@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Wagner Cleaning - Professional Gutter & Window Cleaning | Sonora, CA</title>
+    <meta name="description" content="Professional gutter and window cleaning in Tuolumne & Calaveras Counties. 20 years experience. Owner on every job. Free estimates: (209) 268-8063">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 20px 20px 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 18px;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
+        
+        .phone-button {
+            display: inline-block;
+            background: #dc2626;
+            color: white;
+            padding: 18px 40px;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        
+        .phone-button:hover {
+            background: #b91c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+        }
+        
+        .subtext {
+            font-size: 16px;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .seasonal-banner {
+            background: #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+        
+        .seasonal-banner h2 {
+            color: #92400e;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .seasonal-banner p {
+            color: #78350f;
+            font-size: 16px;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .service-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 30px;
+            transition: all 0.3s;
+        }
+        
+        .service-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+        }
+        
+        .service-card h3 {
+            color: #1e3a8a;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .service-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .service-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+        
+        .why-choose {
+            background: #f9fafb;
+            padding: 40px 20px;
+            margin: 40px -20px;
+        }
+        
+        .why-choose h2 {
+            text-align: center;
+            color: #1e3a8a;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+        
+        .testimonials {
+            margin: 40px 0;
+        }
+        
+        .testimonials h2 {
+            text-align: center;
+            color: #1e3a8a;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+        
+        .testimonial {
+            background: white;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: #4b5563;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+        
+        .service-areas {
+            background: #eff6ff;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+        
+        .service-areas h2 {
+            color: #1e3a8a;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .areas-list {
+            text-align: center;
+            font-size: 18px;
+            color: #1e40af;
+            font-weight: 500;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 50px 20px;
+            margin: 40px -20px 0;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            color: #374151;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: inherit;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+        
+        .submit-button {
+            background: #dc2626;
+            color: white;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .submit-button:hover {
+            background: #b91c1c;
+            transform: translateY(-2px);
+        }
+        
+        .footer {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 26px;
+            }
+            
+            .phone-button {
+                font-size: 20px;
+                padding: 15px 30px;
+            }
+            
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">DAVE WAGNER CLEANING</div>
+        <div class="tagline">Professional Gutter & Window Cleaning | Tuolumne & Calaveras Counties</div>
+        <a href="tel:2092688063" class="phone-button">📞 (209) 268-8063</a>
+        <div class="subtext">Free Estimates Over the Phone • 20 Years Experience</div>
+    </div>
+    
+    <div class="container">
+        <div class="seasonal-banner">
+            <h2>🍂 Fall Gutter Cleaning Season is Here!</h2>
+            <p>Don't let clogged gutters cause water damage to your home. We remove all debris, clear drains, and clean up our mess. Book now before the rainy season! And don't forget – get your windows sparkling clean for the holidays while we're there.</p>
+        </div>
+        
+        <div class="services">
+            <div class="service-card">
+                <h3>🍂 Gutter Cleaning</h3>
+                <ul>
+                    <li>Complete debris removal</li>
+                    <li>Drain clearing & testing</li>
+                    <li>Full ground cleanup</li>
+                    <li>Prevent water damage</li>
+                    <li>Protect your foundation</li>
+                    <li>All work guaranteed</li>
+                </ul>
+                <p style="margin-top: 20px; font-weight: bold; color: #dc2626;">Critical now through winter!</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>✨ Window Cleaning</h3>
+                <ul>
+                    <li>Inside & outside cleaning</li>
+                    <li>Screen cleaning included</li>
+                    <li>Residential & commercial</li>
+                    <li>Streak-free guarantee</li>
+                    <li>Hard water stain removal</li>
+                    <li>Skylight & mirror cleaning</li>
+                </ul>
+                <p style="margin-top: 20px; font-weight: bold; color: #1e3a8a;">Get ready for the holidays with sparkling windows!</p>
+            </div>
+        </div>
+        
+        <div class="why-choose">
+            <h2>Why Choose Dave Wagner Cleaning?</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">👨‍💼</div>
+                    <h3>Owner on Every Job</h3>
+                    <p>Dave personally handles every project to ensure quality</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📅</div>
+                    <h3>20 Years Experience</h3>
+                    <p>Serving the community since 2005</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✅</div>
+                    <h3>Licensed & Insured</h3>
+                    <p>Full insurance for your peace of mind</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💯</div>
+                    <h3>Satisfaction Guarantee</h3>
+                    <p>We stand behind our work 100%</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonials">
+            <h2>What Our Customers Say</h2>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"All the windows look wonderful! I love looking out all our windows now."</div>
+                <div class="testimonial-author">— Abby, Sonora</div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"Dave is professional, courteous, and my windows look great. He arrived when he said he would and did a great job."</div>
+                <div class="testimonial-author">— HomeAdvisor Review</div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"Excellent service window cleaning and very responsive! Dave is the owner and showed up himself to do the job. He was friendly, professional, and showed up on time."</div>
+                <div class="testimonial-author">— T.C., Arnold</div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"Extremely efficient, courteous, and knowledgeable. Excellent work. Cleaned up everything. Reasonable price."</div>
+                <div class="testimonial-author">— Yahoo Local Review</div>
+            </div>
+        </div>
+        
+        <div class="service-areas">
+            <h2>We Proudly Serve</h2>
+            <div class="areas-list">
+                Sonora • Twain Harte • Mi-Wuk Village • Cold Springs • Jamestown<br>
+                Columbia • Groveland • Copperopolis • Angels Camp • Murphys • Arnold
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-section">
+        <h2>Ready to Get Started?</h2>
+        <p style="font-size: 20px; margin-bottom: 20px;">Call now for a free estimate over the phone!</p>
+        <a href="tel:2092688063" class="phone-button">📞 (209) 268-8063</a>
+        
+        <div class="contact-form">
+            <h3 style="color: #1e3a8a; margin-bottom: 20px;">Or Send Us a Message</h3>
+            <form action="https://formspree.io/f/xanyjgvo" method="POST">
+                <div class="form-group">
+                    <label>Name *</label>
+                    <input type="text" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Phone Number *</label>
+                    <input type="tel" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email">
+                </div>
+                
+                <div class="form-group">
+                    <label>Service Needed *</label>
+                    <select name="service" required>
+                        <option value="">Select a service...</option>
+                        <option value="Gutter Cleaning">Gutter Cleaning</option>
+                        <option value="Window Cleaning">Window Cleaning</option>
+                        <option value="Both">Both Gutter & Window Cleaning</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>City</label>
+                    <input type="text" name="city">
+                </div>
+                
+                <div class="form-group">
+                    <label>Additional Details</label>
+                    <textarea name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p><strong>Dave Wagner Cleaning</strong></p>
+        <p>Professional Gutter & Window Cleaning</p>
+        <p>Sonora, CA | (209) 268-8063</p>
+        <p>davewagnercleaning@gmail.com</p>
+        <p style="margin-top: 20px; font-size: 14px;">Licensed & Insured • Serving Tuolumne & Calaveras Counties Since 2005</p>
+    </div>
+</body>
+</html>
